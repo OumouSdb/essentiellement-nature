@@ -1,0 +1,23 @@
+h1 {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+
+.profil {
+    width: 100%;
+}
+
+.profil img {
+    width: 20%;
+}
+
+#a-propos {
+    text-align: center;
+    color: green;
+}
+
+.d-inline {
+    width: 50%;
+    text-align: left;
+    margin: auto;
+}

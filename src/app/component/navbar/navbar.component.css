@@ -1,0 +1,29 @@
+ul {
+    width: 100%;
+    justify-content: space-between;
+    background-color: #E2D2D1;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    font-family: 'BhuTuka Expanded One', cursive;
+}
+
+li {
+    list-style-type: none;
+}
+
+html,
+body {
+    margin-top: 0;
+    padding: 0;
+}
+
+li a {
+    color: white;
+}
+
+.material-symbols-outlined {
+
+    font-size: 2.5em;
+    color: green;
+}
