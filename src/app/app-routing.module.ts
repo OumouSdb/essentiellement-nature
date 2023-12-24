@@ -17,6 +17,7 @@ const routes: Routes = [
   { path: 'inscription', component: SubscribeComponent },
   { path: 'admin-dashboard', component: AdminDashboardComponent },
   { path: 'customer-dashboard', component: CustomerDashboardComponent },
+
 ];
 
 @NgModule({

@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Quicksand:wght@300&display=swap');
+
 html,
 body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
+}
+
+p,
+label {
+
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2rem;
 }
