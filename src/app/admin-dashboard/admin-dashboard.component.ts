@@ -15,11 +15,11 @@ export class AdminDashboardComponent implements OnInit {
   users?: User[];
 
   constructor(private userService: UsersService) {
-    this.getAllUsers();
+
   }
 
   ngOnInit(): void {
-
+    this.getAllUsers();
 
   }
 

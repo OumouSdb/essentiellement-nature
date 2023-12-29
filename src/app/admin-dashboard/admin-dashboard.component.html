@@ -3,18 +3,22 @@
 <table class="table">
     <thead>
         <tr>
-            <th scope="col">#</th>
+
             <th scope="col">Nom</th>
             <th scope="col">Prénom</th>
             <th scope="col">Sexe</th>
         </tr>
     </thead>
-    <tbody *ngIf="users;">
-        <tr *ngFor="let u for users">
-            <td>{{u.firstName}}</td>
+    <tbody *ngIf="users; else noUsers;">
+        <tr *ngFor="let u of users">
+
             <td>{{u.lastName}}</td>
-            <td>{{u.sexes}}</td>
+            <td>{{u.firstname}}</td>
+            <td>{{u.sexe}}</td>
         </tr>
 
     </tbody>
+    <ng-template #noUsers>
+        <span class="text-danger">Aucune réclamation trouvé !</span>
+    </ng-template>
 </table>
