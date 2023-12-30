@@ -24,6 +24,12 @@ export class UsersService {
     return this.httpClient.get<User[]>(`${environment.apiUrl}/users/`, this.httpHeaders);
 
   }
+
+  save(user: User) {
+    console.log(environment.apiUrl);
+    return this.httpClient.post<User>(`${environment.apiUrl}/users/`, user, this.httpHeaders);
+
+  }
 }
 
 

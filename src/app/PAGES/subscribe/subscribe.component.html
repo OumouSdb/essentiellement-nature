@@ -1,0 +1,49 @@
+<h1>Inscription</h1>
+
+<form [formGroup]="subForm" (ngSubmit)="onSubmit()">
+    <div class="w-50 shadow p-3 mb-5 bg-white rounded" style="margin:auto">
+        <div class="mb-3">
+            <label for="lastName" class="form-label">Nom</label>
+            <input type="text" class="form-control" formControlName="lastName" id="lastName">
+            <p class="text-danger" *ngIf="validate('lastName') as message">{{ message }}</p>
+        </div>
+        <div class="mb-3">
+            <label for="firstname" class="form-label">Prenom</label>
+            <input type="text" class="form-control" formControlName="firstname" id="firstname">
+            <p class="text-danger" *ngIf="validate('firstname') as message">{{ message }}</p>
+        </div>
+        <div class="mb-3">
+            <label for="age" class="form-label">Age</label>
+            <input type="number" class="form-control" formControlName="age" id="age">
+            <p class="text-danger" *ngIf="validate('age') as message">{{ message }}</p>
+
+        </div>
+        <div class="mb-3">
+            <label for="sexe" class="form-label">Genre</label>
+            <input type="text" class="form-control" formControlName="sexe" id="sexe">
+            <p class="text-danger" *ngIf="validate('sexe') as message">{{ message }}</p>
+
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" formControlName="email" id="email">
+            <p class="text-danger" *ngIf="validate('email') as message">{{ message }}</p>
+
+        </div>
+        <div class="mb-3">
+            <label for="pass" class="form-label">Mot de passe</label>
+            <input type="password" class="form-control" formControlName="pass" id="pass">
+            <p class="text-danger" *ngIf="validate('pass') as message">{{ message }}</p>
+
+        </div>
+        <div class="mb-3">
+            <label for="confirmPass" class="form-label">Confirmer mot de passe</label>
+            <input type="password" class="form-control" formControlName="confirmPass" id="confirmPass">
+            <p class="text-danger" *ngIf="validate('confirmPass') as message">{{ message }}</p>
+
+            <a routerLink="/connexion">Se connecter</a>
+        </div>
+
+        <button class="btn btn-orange" type="submit">Envoyer</button>
+    </div>
+</form>
