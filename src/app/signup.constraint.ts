@@ -11,10 +11,10 @@ export const signupConstraint = {
         required: `L'adresse email est obligatoire`,
     },
     age: {
-        required: `La date d'entrée est obligatoire`,
+        required: `L'âge' est obligatoire`,
     },
     sexe: {
-        required: `Le nom de la formation est obligatoire`,
+        required: `Le genre est obligatoire`,
 
     },
     pass: {

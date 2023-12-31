@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+
+
 .btn-orange {
     background-color: #E46343;
     color: white;
@@ -8,4 +12,25 @@ h1,
 a {
     text-align: center;
     color: green;
+}
+
+
+h1,
+h2,
+h3 {
+    font-family: 'Grand Hotel', cursive;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+p,
+label,
+td,
+th,
+li,
+button,
+a {
+
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2rem;
 }

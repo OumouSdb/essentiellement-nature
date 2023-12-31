@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NavbarComponent } from './component/navbar/navbar.component';
 import { FooterComponent } from './component/footer/footer.component';
-import { HomeComponent } from '../app/home/home.component';
+import { HomeComponent } from './PAGES/home/home.component';
 import { ContactComponent } from './PAGES/contact/contact.component';
 import { LoginComponent } from './PAGES/login/login.component';
 import { SubscribeComponent } from './PAGES/subscribe/subscribe.component';
