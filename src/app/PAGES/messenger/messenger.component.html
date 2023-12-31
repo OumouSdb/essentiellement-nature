@@ -1,0 +1,25 @@
+<h1>Messagerie</h1>
+
+<table class="table ">
+    <thead class="table table-danger">
+        <tr>
+
+            <th scope="col">Email</th>
+            <th scope="col">Message</th>
+
+        </tr>
+    </thead>
+    <tbody *ngIf="messages; else noMessages;">
+        <tr *ngFor="let m of messages" class="table-light">
+
+            <td>{{m.email}}</td>
+            <td>{{m.message}}</td>
+
+        </tr>
+
+
+    </tbody>
+    <ng-template #noMessages>
+        <span class="text-danger">Aucun message trouvé !</span>
+    </ng-template>
+</table>

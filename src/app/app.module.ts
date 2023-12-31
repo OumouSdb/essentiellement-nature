@@ -12,6 +12,7 @@ import { LoginComponent } from './PAGES/login/login.component';
 import { AdminDashboardComponent } from './PAGES/admin-dashboard/admin-dashboard.component';
 import { CustomerDashboardComponent } from './PAGES/customer-dashboard/customer-dashboard.component';
 import { SubscribeComponent } from './PAGES/subscribe/subscribe.component';
+import { MessengerComponent } from './PAGES/messenger/messenger.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { SubscribeComponent } from './PAGES/subscribe/subscribe.component';
     LoginComponent,
     AdminDashboardComponent,
     CustomerDashboardComponent,
-    SubscribeComponent
+    SubscribeComponent,
+    MessengerComponent
   ],
   imports: [
     BrowserModule,
