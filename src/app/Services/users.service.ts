@@ -37,6 +37,12 @@ export class UsersService {
     return this.httpClient.get<Messagerie[]>(`${environment.apiUrl}/messagerie`, this.httpHeaders);
 
   }
+
+  saveMsg(msg: Messagerie) {
+    console.log(environment.apiUrl);
+    return this.httpClient.post<Messagerie>(`${environment.apiUrl}/messagerie/save`, msg, this.httpHeaders);
+
+  }
 }
 
 
