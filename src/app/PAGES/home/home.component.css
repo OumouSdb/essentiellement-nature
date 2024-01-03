@@ -34,3 +34,13 @@ p {
     font-family: 'Quicksand', sans-serif;
     font-size: 2rem;
 }
+
+.custom-image {
+
+    /* Largeur fixe de l'image */
+    height: 800px;
+    /* Hauteur automatique pour conserver les proportions originales */
+
+    /* Ajustez la valeur suivante en fonction du ratio hauteur/largeur souhaité (par exemple, 4:3) */
+    /* padding-bottom: 75%; */
+}

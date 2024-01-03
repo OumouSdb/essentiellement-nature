@@ -29,7 +29,8 @@ td,
 th,
 li,
 button,
-a {
+a,
+select {
 
     font-family: 'Quicksand', sans-serif;
     font-size: 2rem;

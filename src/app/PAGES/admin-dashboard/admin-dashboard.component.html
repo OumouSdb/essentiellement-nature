@@ -1,5 +1,7 @@
-<h1>Bienvenue Admin</h1>
-<a routerLink="/messenger">Messagerie</a>
+<h1 class="text-center">Bienvenue Admin</h1>
+<a routerLink="/messenger"><span class="material-symbols-outlined ">
+        mail
+    </span></a>
 
 <table class="table">
     <thead>
@@ -7,7 +9,7 @@
 
             <th scope="col">Nom</th>
             <th scope="col">Prénom</th>
-            <th scope="col">Sexe</th>
+            <th scope="col">Genre</th>
         </tr>
     </thead>
     <tbody *ngIf="users; else noUsers;">

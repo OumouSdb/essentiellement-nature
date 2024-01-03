@@ -20,7 +20,12 @@
         </div>
         <div class="mb-3">
             <label for="sexe" class="form-label">Genre</label>
-            <input type="text" class="form-control" formControlName="sexe" id="sexe">
+
+            <select name="genre" id="genre" class="form-select" aria-label="Genre">
+                <option selected></option>
+                <option value="femme">Femme</option>
+                <option value="homme">Homme</option>
+            </select>
             <p class="text-danger" *ngIf="validate('sexe') as message">{{ message }}</p>
 
         </div>
