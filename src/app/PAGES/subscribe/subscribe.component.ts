@@ -85,7 +85,7 @@ export class SubscribeComponent implements OnInit {
         this.userToSave.lastName = this.subForm.get('lastName')?.value ?? "unknown lastname";
         this.userToSave.age = Number(this.subForm.get('age')?.value) ?? 0;
         this.userToSave.email = this.subForm.get('email')?.value ?? "unknown email";
-        this.userToSave.sexe = this.subForm.get('sexe')?.value ?? "unknown gender";
+        this.userToSave.genre = this.subForm.get('sexe')?.value ?? "unknown gender";
         this.userToSave.password = this.subForm.get('pass')?.value ?? "unknown password";
         this.userToSave.role = UserRole.ADMIN;
         this.userToSave.version = 0;

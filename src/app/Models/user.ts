@@ -6,7 +6,7 @@ export class User {
     age: number;
     email: string;
     password: string;
-    sexe: string;
+    genre: string;
     role: UserRole;
     version: number;
 
@@ -17,7 +17,7 @@ export class User {
         this.email = "";
         this.password = "";
         this.age = 0;
-        this.sexe = "";
+        this.genre = "";
         this.role = UserRole.USER;
         this.version = 0;
     }

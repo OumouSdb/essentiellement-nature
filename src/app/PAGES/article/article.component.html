@@ -1,0 +1,17 @@
+<h1 class="text-center">Articles </h1>
+
+
+
+<div class="card" *ngFor="let a of articles">
+    <div class="card-header mx-auto">
+        <span class="material-symbols-outlined">
+            spa
+        </span>
+    </div>
+    <div class="card-body">
+        <h3 class="card-title text-center">{{a.title}}</h3>
+        <img src="{{a.image_name}}" alt="">
+        <p class="card-text text-justify">{{a.texte}}</p>
+        <a href="#" class="btn btn-orange">En savoir plus</a>
+    </div>
+</div>

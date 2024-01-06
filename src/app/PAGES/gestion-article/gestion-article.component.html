@@ -1,0 +1,21 @@
+<h1 class="text-center">Gestion des articles <span class="material-symbols-outlined">
+        add_circle
+    </span></h1>
+
+<form [formGroup]="articleForm" class="w-75 mx-auto" (ngSubmit)="onSubmit()">
+
+    <div class="mb-3">
+        <label for="title" class="form-label">Titre</label>
+        <input type="text" class="form-control" ngFormControlName="title">
+
+    </div>
+    <div class="input-group mb-3">
+        <input type="file" class="form-control" id="image" enctype="multipart/form-data">
+        <label class="input-group-text" for="image" ngFormControlName="image">Choisir une image</label>
+    </div>
+    <div class="form-floating mb-3">
+        <textarea class="form-control" id="texte"></textarea>
+        <label for="texte" ngFormControlName="texte">Rediger un article</label>
+    </div>
+    <button class="btn-orange">Valider</button>
+</form>
